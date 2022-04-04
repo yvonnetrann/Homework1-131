@@ -13,6 +13,8 @@ Main difference:supervised learning uses labeled input and output data, while un
 
 # Question 2
 
+In the context of machine learning, classification models are used to is predict a discrete class label, while regression models are tasked with predicting a continuous quantity.
+
 # Question 3
 
 # Question 4
@@ -40,7 +42,6 @@ Yes, there seems to be a relationship between hwy and cty as a positive correlat
 ```{r}
 ggplot(mpg, aes(y = manufacturer)) +
 geom_bar()
-
 
 ```
 

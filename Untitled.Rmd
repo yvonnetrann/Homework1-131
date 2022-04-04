@@ -3,26 +3,50 @@ title: "HW1"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+# Question 1
+
+Supervised learning: consists of a target / outcome variable which is to be predicted from a given set of predictors;generates a function that map inputs to desired outputs, and training process continues until the model achieves a desired level of accuracy on the training data
+
+Unsupervised learning:assumes that the input dataset is distributed according to some unknown underlying statistical distribution; attempts to find clusters or groups in the data without any labels for what constitutes a "cluster" or "group"
+
+Main difference:supervised learning uses labeled input and output data, while unsupervised does not
+
+# Question 2
+
+# Question 3
+
+# Question 4
+
+# Question 5
+
+# Question 6
+
+# Exercise 1
+
+```{r}
+library(tidyverse)
+hist(mpg$hwy,main = "Highway Miles Per Gallon",xlab = "Hwy Miles")
+```
+In the histogram, we can see there is a bi-modal distribution that is slightly right-skewed. The center is also around 23, while the spread is from 10 to 45, with a range about 35. 
+
+# Exercise 2
+```{r}
+library(ggplot2)
+ggplot(mpg, aes(hwy,cty)) + geom_point()
+```
+Yes, there seems to be a relationship between hwy and cty as a positive correlation appears in the scatterplot. This indicates that when the highway mileage increases, so does the city mileage.
+
+# Exercise 3
+```{r}
+ggplot(mpg, aes(y = manufacturer)) +
+geom_bar()
+
+
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Exercise 4
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+# Exercise 5
 
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+# Exercise 6

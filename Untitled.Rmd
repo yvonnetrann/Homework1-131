@@ -13,10 +13,11 @@ Main difference:supervised learning uses labeled input and output data, while un
 
 # Question 2
 
-In the context of machine learning, classification models are used to is predict a discrete class label, while regression models are tasked with predicting a continuous quantity.
+In the context of machine learning, classification models are used to predict a discrete class label, while regression models are tasked with predicting a continuous quantity.
 
 # Question 3
-
+Regression: Mean Squared Error and Adjusted R-Squared
+Classification: Accuracy and Confusion Matrix
 # Question 4
 
 # Question 5

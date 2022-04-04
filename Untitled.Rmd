@@ -18,9 +18,22 @@ In the context of machine learning, classification models are used to predict a 
 # Question 3
 Regression: Mean Squared Error and Adjusted R-Squared
 Classification: Accuracy and Confusion Matrix
+
 # Question 4
+Descriptive:best visually emphasizes a trend in data, such as using a line on a scatterplot 
+
+Predictive:looks for which combination of features fit best; goal to predict Y with minimum reducible error rather than focusing on hypothesis tests
+
+Inferential: searches for significant features; test theories and possible claims, and state relationship between outcome & predictor
 
 # Question 5
+Mechanistic: relating to the usage of a theory in order predict what will happen
+
+Empirically-driven: relating to learning by experiment and observation rather than theory
+
+The two models differ in the sense that mechanistic assumes a parametric form of f while empirically-driven does not. The latter is also more flexible by default, and requires a larger number of observations. However, they are similar in the fact that both models can lead to overfitting because of the number of parameters.
+
+[continue]
 
 # Question 6
 

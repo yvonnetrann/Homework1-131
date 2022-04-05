@@ -67,7 +67,6 @@ ggplot(mpg,aes(x = fct_infreq(manufacturer), fill = manufacturer)) +
   coord_flip() 
 
 ```
-
 The dodge produced the most cars, while the lincoln produced the least.
 
 # Exercise 4
@@ -86,3 +85,10 @@ mpg[] <- lapply(mpg, as.numeric)
 M = cor(mpg)
 corrplot(M, type = "lower")
 ```
+Strong negative correlation: Cty and displ, cty and cyl, hwy and displ, hwy and cyl
+
+Strong positive correlation: cyl and displ, hwy and cty
+
+Weak positive correlation: year and displ, cyl and year
+
+The positive correlation pairs make sense to me, but the negative correlations are rather surprising to me. However, I personally do not know much about cars, so my interpretation of the roles of these variables in cars may be completely wrong. 

@@ -33,9 +33,15 @@ Empirically-driven: relating to learning by experiment and observation rather th
 
 The two models differ in the sense that mechanistic assumes a parametric form of f while empirically-driven does not. The latter is also more flexible by default, and requires a larger number of observations. However, they are similar in the fact that both models can lead to overfitting because of the number of parameters.
 
-[continue]
+In general, I believe that neither model is more easier to understand than the other because it depends on the situation. In some cases, a mechanistic model may be easier to interpret because only a few input data points are required for a given prediction, rather than needing a large number of observations depending on the number of variables included for empirical. However, other times, an empirical model may be easier because you just have a few concerns, and none of them require lengthy, involved computation.
+
+Bias-variance tradeoff is related to the use of mechanistic or empirically-driven models by ensuring that the most appropriate models are selected based on the sample data. It is used to imply that a model should balance underfitting and overfitting.
 
 # Question 6
+
+Question 1 would be considered predictive because we are estimating the value of the response variable (voting results) based on predictor or input variables (a voter's profile/data).
+
+Question 2 would be considered inferential because now we are trying to understand the relationship between the response and the predictor variables. We are interested in understanding how one's personal contact with the candidate could impact their support for them.
 
 # Exercise 1
 

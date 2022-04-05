@@ -54,20 +54,35 @@ In the histogram, we can see there is a bi-modal distribution that is slightly r
 # Exercise 2
 ```{r}
 library(ggplot2)
-ggplot(mpg, aes(hwy,cty)) + geom_point()
+ggplot(mpg, aes(hwy,cty, color = class)) + geom_point()
 ```
 Yes, there seems to be a relationship between hwy and cty as a positive correlation appears in the scatterplot. This indicates that when the highway mileage increases, so does the city mileage.
 
 # Exercise 3
 ```{r}
-ggplot(mpg, aes(y = manufacturer)) +
-geom_bar()
+library(forcats)
+library(ggthemes)
+ggplot(mpg,aes(x = fct_infreq(manufacturer), fill = manufacturer)) + 
+	geom_bar(stat = 'count') +
+  coord_flip() 
 
 ```
 
+The dodge produced the most cars, while the lincoln produced the least.
 
 # Exercise 4
+```{r}
+boxplot(hwy ~ cyl, data = mpg, col = c("2", "3", "4","5"))
+```
+The higher the value of cyl, the lower the value of hwy.
+The lower the value of cyl, the higher the value of hwy.
+The lowest and highest values of cyl have outliers.
 
 # Exercise 5
+```{r}
+library(corrplot)
 
-# Exercise 6
+mpg[] <- lapply(mpg, as.numeric)
+M = cor(mpg)
+corrplot(M, type = "lower")
+```
